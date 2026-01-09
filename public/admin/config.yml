@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: cmyk-alt/cilantrowater
+  branch: main
+
+media_folder: "public/images"
+public_folder: "/images"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "content/home.md"
+        label: "Home Page"
+        name: "home"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Hero Text", name: "hero", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
